@@ -10,6 +10,7 @@ local TextBox = Instance.new("TextBox")
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -17,6 +18,8 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.3859649, 0, 0.365671635, 0)
 Frame.Size = UDim2.new(0, 346, 0, 158)
+Frame.Active = true
+Frame.Draggable = true
 
 TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
